@@ -1,2 +1,3 @@
 # Turkish Spam Numbers
-Türk kullanıcılar için spam numara listesi
+[TR] Türk kullanıcılar için spam numara listesi  
+[EN] Spam number list for Turkish users
