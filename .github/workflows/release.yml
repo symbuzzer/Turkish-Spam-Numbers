@@ -22,7 +22,7 @@ jobs:
           
       - name: Adding version string to "README.md"
         run:  |
-          sed -i "3s/.*/# Turkish Spam Numbers - v${DATE}/" README.md
+          sed -i "1s/.*/# Turkish Spam Numbers - v${DATE}/" README.md
       
       - name: Create "Fossify Messages import file"
         run:  |
