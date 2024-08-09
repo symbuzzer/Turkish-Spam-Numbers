@@ -1,0 +1,39 @@
+name: release
+
+on:
+  push:
+    branches: ['main']
+    paths: ['numbers']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:          
+      - name: Set variables
+        run:  |
+          echo "DATE=$(date +'%y%m%d%H')" >> $GITHUB_ENV
+          echo "DATE2=$(date +'%Y/%m/%d - %H:%S')" >> $GITHUB_ENV
+    
+      - name: Checkout
+        uses: symbuzzer/fork-checkout-repo@main
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+          
+      - name: Adding version string to "README.md"
+        run:  |
+          sed -i "3s/.*/# Turkish Spam Numbers - v${DATE}/" README.md
+      
+      - name: Create "Fossify Messages import file"
+        run:  |
+          NUMBERS=$(paste -sd ',' numbers)
+          echo $NUMBERS > fossify_import
+          
+      - name: Create "version" file
+        run:  |
+          echo ${{ env.DATE }} > version
+          
+      - name: Commit and push changes
+        uses: symbuzzer/fork-push-changes@master
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
