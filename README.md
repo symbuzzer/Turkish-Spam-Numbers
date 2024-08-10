@@ -12,7 +12,7 @@
 
 -------------------------------------------  
 ## [EN] MANIFEST
-- Turkish Spam Numbers; It is an open source project prepared to block and list spam calls such as ["internet taahhüt sürenizin sonuna geldiniz"](https://eksisozluk.com/internet-taahhut-surenizin-sonuna-geldiniz--7279636) which are commonly disturbing GSM users in Turkey.
+- Turkish Spam Numbers is an open source project prepared to block and list spam calls such as ["internet taahhüt sürenizin sonuna geldiniz"](https://eksisozluk.com/internet-taahhut-surenizin-sonuna-geldiniz--7279636) which are commonly disturbing GSM users in Turkey.
 - If you want to add or remove a number from the block list, please create an [issue](https://github.com/symbuzzer/Turkish-Spam-Numbers/issues) first.
 - If you want a list to be prepared for a mobile application you use, please create an [issue](https://github.com/symbuzzer/Turkish-Spam-Numbers/issues) first.
 - This list will try to be updated daily.
