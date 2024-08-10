@@ -39,7 +39,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           tag: v${{ env.DATE }}
           name: v${{ env.DATE }}
-          body: Spam numaraları güncellendi: ${{ env.DATE2 }}
+          body: Spam numaraları güncellendi ${{ env.DATE2 }}
           files: numbers, fossify_import
           gzip: false
           draft: false
