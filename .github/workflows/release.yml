@@ -32,6 +32,19 @@ jobs:
       - name: Create "version" file
         run:  |
           echo ${{ env.DATE }} > version
+
+      - name: Create and upload release asset
+        uses: symbuzzer/fork-github-release@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: v${{ env.DATE }}
+          name: v${{ env.DATE }}
+          body: Spam numaraları güncellendi: ${{ env.DATE2 }}
+          files: numbers, fossify_import
+          gzip: false
+          draft: false
+          prerelease: false
+          allow_override: true
           
       - name: Commit and push changes
         uses: symbuzzer/fork-push-changes@master
