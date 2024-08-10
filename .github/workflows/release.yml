@@ -40,7 +40,7 @@ jobs:
           tag: v${{ env.DATE }}
           name: v${{ env.DATE }}
           body: Spam numaraları güncellendi ${{ env.DATE2 }}
-          files: numbers, fossify_import
+          files: numbers fossify_import
           gzip: false
           draft: false
           prerelease: false
