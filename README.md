@@ -1,2 +1,2 @@
-# Turkish Spam Numbers - v24080913
+# Turkish Spam Numbers - v24081011
 [TR] Türk kullanıcılar için spam numara listesi
