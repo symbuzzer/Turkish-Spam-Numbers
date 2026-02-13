@@ -1,4 +1,4 @@
-# Turkish Spam Numbers - v26021206
+# Turkish Spam Numbers - v26021312
 [TR] Türk kullanıcılar için spam numara listesi / [EN] Spam number list for Turkish users  
 [[TR] Nasıl kullanılır? / [EN] How to use?](https://github.com/symbuzzer/Turkish-Spam-Numbers/wiki)
 
